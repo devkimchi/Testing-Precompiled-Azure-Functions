@@ -1,0 +1,22 @@
+﻿{
+  "scriptFile": "PrecompiledLibraries.dll",
+  "entryPoint": "PrecompiledLibraries.MyHttpTriggerWithDependencies.Run",
+
+  "disabled": false,
+
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "route": "my-function-2",
+      "methods": [ "get" ]
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    }
+  ]
+}
